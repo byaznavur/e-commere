@@ -1,2 +1,16 @@
 // main.scss
 @import "global";
+// main.scss
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "vendors/bootstrap";
+@import "base/reset";
+@import "base/typography";
+@import "./layout/header";
+@import "layout/footer";
+@import "./components/inputs";
+
+@import "components/buttons";
+@import "components/cards";
+@import "./home";

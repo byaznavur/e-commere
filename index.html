@@ -12,56 +12,66 @@
   </head>
   <body>
     <header>
-      <div class="container header">
-        <div>
-          <a href="./index.html" class="logo">
-            <img src="./assets/images/homeimg/Group.png" alt="Logo" />
-            <h3>Северяночка</h3>
-          </a>
-        </div>
-        <ul>
-          <li>
-            <button><i class="bx bx-menu"></i>Каталог</button>
-          </li>
-          <li>
-            <input type="text" placeholder="Найти товар" />
-            <i class="bx bx-search"></i>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-heart"></i>
-              Избранное
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-package"></i>
-              продукты
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bx bx-basket"></i>
-              Корзина
-            </a>
-          </li>
+      <nav class="header container">
+        <a href="./index.html"
+          ><img src="./assets/images/homeimg/logo .png" alt="logo" />
+        </a>
 
-          <li>
-            <select name="" id="">
-              <option value="">
-                <img
-                  width="20"
-                  src="./assets/images/homeimg/person.png"
-                  alt="sdsa"
-                />
-                <h3>Алексей</h3>
-              </option>
-            </select>
-          </li>
-        </ul>
-      </div>
+        <button class="katalogBtn">
+          <i class="bx bx-menu"></i><span>Каталог</span>
+        </button>
+        <form class="inputForm">
+          <input placeholder="Найти товар" type="text" /><i
+            class="bx bx-search"
+          ></i>
+        </form>
+        <div class="list">
+          <span
+            ><i class="bx bx-heart"></i>
+            <h4>Избранное</h4></span
+          >
+          <span
+            ><i class="bx bx-package"></i>
+            <h4>продукты</h4></span
+          >
+          <span
+            ><i class="bx bx-shopping-bag"></i>
+            <h4>Корзина</h4></span
+          >
+        </div>
+        <select>
+          <option value="user">
+            <h4>Алексей</h4>
+          </option>
+          <option value="user">
+            <h4>Вход</h4>
+          </option>
+        </select>
+      </nav>
     </header>
 
+    <main>
+      <section class="herro">
+        <div class="herro-info">
+          <img src="./assets/images/homeimg/herro-img.png" alt="" />
+          <h2>Доставка бесплатно от 1000 ₽</h2>
+        </div>
+      </section>
+
+      <section class="discount container">
+        <div class="discount-title">
+          <h3>Акции</h3>
+
+          <button>Все продукты<i class="bx bx-chevron-right"></i></button>
+        </div>
+
+        <div class="discount-products"></div>
+      </section>
+    </main>
+
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="./js/products-data.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
