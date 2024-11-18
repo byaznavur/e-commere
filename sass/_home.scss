@@ -151,4 +151,123 @@ main {
       }
     }
   }
+
+  .special {
+    h2 {
+      /* Desc/Header/M */
+      color: rgb(65, 65, 65);
+      font-family: Rubik;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .special-cards {
+      display: flex;
+      justify-content: space-between !important;
+      gap: 50px;
+      .special-card:last-child {
+        background: rgb(229, 255, 222);
+      }
+      .special-card {
+        display: flex;
+        align-items: center;
+        background-color: #fcd5ba;
+        padding: 20px 30px;
+        width: 584px;
+        height: 200px;
+
+        img {
+          height: 190px;
+        }
+        .special-card-info {
+          h3 {
+            /* Desc/Header/S */
+            color: rgb(65, 65, 65);
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+          p {
+            /* Desc/Text/S */
+            color: rgb(65, 65, 65);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .special {
+      padding: 0;
+      h2 {
+        /* Mob/Header/M */
+        color: rgb(65, 65, 65);
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+
+      .special-cards {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        .special-card:last-child {
+          background: rgb(229, 255, 222);
+        }
+        .special-card {
+          display: flex;
+          align-items: center;
+          background-color: #fcd5ba;
+          padding: 20px 30px;
+          width: 336px;
+          height: 200px;
+          justify-content: center;
+          margin: 0 auto;
+
+          img {
+            height: 130px;
+          }
+          .special-card-info {
+            h3 {
+              /* Mob/Header/S */
+              color: rgb(65, 65, 65);
+              font-family: Rubik;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 150%;
+              letter-spacing: 0%;
+              text-align: left;
+            }
+            p {
+              /* Mob/Text/S */
+              color: rgb(65, 65, 65);
+              font-family: Rubik;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 150%;
+              letter-spacing: 0%;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
 }

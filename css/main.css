@@ -558,4 +558,132 @@ main .discount .discount-products {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+main .special h2 {
+  /* Desc/Header/M */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+main .special .special-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  gap: 50px;
+}
+main .special .special-cards .special-card:last-child {
+  background: rgb(229, 255, 222);
+}
+main .special .special-cards .special-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcd5ba;
+  padding: 20px 30px;
+  width: 584px;
+  height: 200px;
+}
+main .special .special-cards .special-card img {
+  height: 190px;
+}
+main .special .special-cards .special-card .special-card-info h3 {
+  /* Desc/Header/S */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main .special .special-cards .special-card .special-card-info p {
+  /* Desc/Text/S */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  main .special {
+    padding: 0;
+  }
+  main .special h2 {
+    /* Mob/Header/M */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  main .special .special-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .special .special-cards .special-card:last-child {
+    background: rgb(229, 255, 222);
+  }
+  main .special .special-cards .special-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fcd5ba;
+    padding: 20px 30px;
+    width: 336px;
+    height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  main .special .special-cards .special-card img {
+    height: 130px;
+  }
+  main .special .special-cards .special-card .special-card-info h3 {
+    /* Mob/Header/S */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  main .special .special-cards .special-card .special-card-info p {
+    /* Mob/Text/S */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */
