@@ -102,6 +102,90 @@ header .header select {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 80px;
+  }
+  header .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header .list {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 24px;
+  }
+  header .header .list span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .header .inputForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header .inputForm input {
+    width: 201px;
+  }
+  header .header .inputForm .bx-search {
+    margin-left: -30px;
+  }
+  header .header .katalogBtn {
+    display: none !important;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgb(112, 192, 91);
+  }
+  header .header .katalogBtn .bx-menu {
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  header .header select {
+    display: none;
+    padding: 10px 20px;
+    /* Desc/Text/S */
+    color: rgb(35, 35, 35);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
 input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -130,6 +214,153 @@ button {
   letter-spacing: 0%;
   text-align: center;
   cursor: pointer;
+}
+
+.card {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card-img {
+  width: 272px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+}
+.card-img .heart i {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card-img .heart i:hover {
+  color: red;
+}
+.card-img .discount {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.card-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.card-name h3 {
+  /* Desc/Text-Bold/M */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card-name p {
+  /* Desc/Text/S */
+  color: rgb(96, 96, 96);
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.card-price p {
+  /* Desc/Text-Bold/M */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-price p span {
+  color: rgb(255, 102, 51);
+}
+.card-desc {
+  /* Desc/Text/S */
+  color: rgb(65, 65, 65);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card-btn {
+  /* Desc/Text/S */
+  color: rgb(112, 192, 91);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Main/Secondary */
+  border: 1px solid rgb(112, 192, 91);
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.card-btn:hover {
+  border-radius: 4px;
+  /* Desc/Text/S */
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid rgb(255, 102, 51);
+  /* Main / Primary */
+  background: rgb(255, 102, 51);
 }
 
 .herro {
@@ -162,6 +393,53 @@ button {
           text-decoration-skip-ink: none;
 }
 
+@media screen and (max-width: 768px) {
+  .herro {
+    background-image: url(../assets/images/homeimg/bg-herro.png);
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat;
+    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .herro .herro-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .herro .herro-info h2 {
+    /* Desc/Text-Bold/M */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .herro .herro-info img {
+    display: none;
+  }
+}
 main .discount {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,25 +494,68 @@ main .discount .discount-products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-}
-main .discount .discount-products .discount-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 4px;
-  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  padding: 10px;
 }
-main .discount .discount-products .discount-card .product-image {
-  width: 100%;
-  height: 150px;
+@media screen and (max-width: 768px) {
+  main .discount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+  }
+  main .discount .discount-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  main .discount .discount-title h3 {
+    /* Mob/Header/M */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  main .discount .discount-title button {
+    /* Desc/Text/S */
+    color: rgb(96, 96, 96);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .discount .discount-title button .bx-chevron-right {
+    font-size: 24px;
+  }
+  main .discount .discount-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

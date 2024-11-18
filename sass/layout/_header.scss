@@ -55,3 +55,68 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 80px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .list {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      .inputForm {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 201px;
+        }
+
+        .bx-search {
+          margin-left: -30px;
+        }
+      }
+      .katalogBtn {
+        display: none !important;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        background: rgb(112, 192, 91);
+
+        .bx-menu {
+          height: 24px;
+          width: 24px;
+          font-size: 24px;
+          margin-right: 5px;
+        }
+      }
+
+      select {
+        display: none;
+        padding: 10px 20px;
+        /* Desc/Text/S */
+        color: rgb(35, 35, 35);
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}

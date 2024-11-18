@@ -1,0 +1,130 @@
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  justify-content: center;
+
+  &-img {
+    width: 272px;
+    height: 160px;
+    position: relative;
+    margin: 0 auto;
+
+    .heart i {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    .discount {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+
+    h3 {
+      /* Desc/Text-Bold/M */
+      color: rgb(65, 65, 65);
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    p {
+      /* Desc/Text/S */
+      color: rgb(96, 96, 96);
+      font-family: Rubik;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  &-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      /* Desc/Text-Bold/M */
+      color: rgb(65, 65, 65);
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: left;
+      display: flex;
+
+      span {
+        color: rgb(255, 102, 51);
+      }
+    }
+  }
+  &-desc {
+    /* Desc/Text/S */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &-btn {
+    /* Desc/Text/S */
+    color: rgb(112, 192, 91);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    /* Main/Secondary */
+    border: 1px solid rgb(112, 192, 91);
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+    transition: all 0.7s ease;
+
+    &:hover {
+      border-radius: 4px;
+      /* Desc/Text/S */
+      color: rgb(255, 255, 255);
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      border: 1px solid rgb(255, 102, 51);
+      /* Main / Primary */
+      background: rgb(255, 102, 51);
+    }
+  }
+}

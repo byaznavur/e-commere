@@ -21,6 +21,40 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .herro {
+    background-image: url(../assets/images/homeimg/bg-herro.png);
+    width: 100%;
+    height: 100px;
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .herro-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+
+      h2 {
+        /* Desc/Text-Bold/M */
+        color: rgb(65, 65, 65);
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}
 main {
   .discount {
     display: flex;
@@ -64,19 +98,56 @@ main {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      justify-content: center;
+    }
+  }
 
-      .discount-card {
+  @media screen and (max-width: 768px) {
+    .discount {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      padding: 20px;
+
+      .discount-title {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 4px;
-        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-        background: rgb(255, 255, 255);
-        padding: 10px;
-        .product-image {
-          width: 100%;
-          height: 150px;
+        justify-content: space-between !important;
+
+        h3 {
+          /* Mob/Header/M */
+          color: rgb(65, 65, 65);
+          font-family: Rubik;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
         }
+
+        button {
+          /* Desc/Text/S */
+          color: rgb(96, 96, 96);
+          font-family: Rubik;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+
+          .bx-chevron-right {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .discount-products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
       }
     }
   }

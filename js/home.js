@@ -1,54 +1,35 @@
 const discountProducts = document.querySelector(".discount-products");
-
+const discountBtn = document.querySelector(".discountBtn");
+// Mahsulotni HTML formatida qaytaruvchi funksiya
 function discountProduct(el) {
-  const productCard = document.createElement("div");
-  productCard.classList.add("discount-card");
+  return `   
+       <div class="card">
+            <div class="card-img">
+              <span class="heart"><i class="bx bxs-heart"></i></span>
+              <img src="${el.images[0]}" alt="ad" />
+              <h5 class="discount">${el.discount}%</h5>
+            </div>
+            <div class="card-name">
+              <h3><span>${el.id}.</span>${el.name}</h3>
+              <p>${el.category}</p>
+            </div>
 
-  const productImage = document.createElement("img");
-  productImage.src = el.images[0];
-  productImage.alt = el.name;
-  productImage.classList.add("product-image");
+            <div class="card-price">
+              <p>Price: <span>${el.price}$</span></p>
+              <p>Discount: <span>${el.discount}%</span></p>
+              <p>Rating: <span>${el.rating}</span></p>
+            </div>
+            <p class="card-desc">${el.description.slice(0, 40)}...</p>
 
-  const productName = document.createElement("h3");
-  productName.innerHTML = el.name;
-  productName.classList.add("product-name");
-
-  const productPrice = document.createElement("p");
-  productPrice.innerHTML = `$${el.price.toFixed(2)}`;
-  productPrice.classList.add("product-price");
-
-  const productRating = document.createElement("p");
-  productRating.innerHTML = el.rating;
-  productRating.classList.add("product-rating");
-
-  const productDiscount = document.createElement("p");
-  productDiscount.innerHTML = `${el.discount}% `;
-  productDiscount.classList.add("product-discount");
-
-  const productDesc = document.createElement("product-desc");
-  productDesc.innerHTML = el.description.slice(0, 65) + "...";
-  productDesc.classList.add("product-desc");
-
-  const productCategory = document.createElement("product-category");
-  productCategory.innerHTML = el.category;
-  productCategory.classList.add("product-category");
-
-  productCard.append(
-    productImage,
-    productName,
-    productDiscount,
-    productDesc,
-    productRating,
-    productPrice,
-    productCategory
-  );
-
-  return productCard;
+            <button class="card-btn">В корзину</button>
+          </div>
+          `;
 }
 
-products.slice(0, 5).map((el, i) => {
+// Faqat chegirma bor mahsulotlarni chiqarish
+products.slice(0, 5).forEach((el) => {
   if (el.discount > 0) {
-    let card = discountProduct(el);
-    discountProducts.append(card);
+    // Karta HTMLini yaratib qo'shamiz
+    discountProducts.innerHTML += discountProduct(el);
   }
 });
