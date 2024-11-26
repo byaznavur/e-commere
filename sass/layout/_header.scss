@@ -113,7 +113,7 @@
     }
 
     .catalog-list {
-      display: grid;
+      display: none;
       position: absolute;
       grid-template-columns: repeat(2, 1fr);
       background-color: #fff;
