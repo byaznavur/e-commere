@@ -1,31 +1,31 @@
-const bxMenu = document.querySelector(".burger");
-const catalogList = document.querySelector(".catalog-list");
-const categoryBtn = document.querySelector(".categoryBtn");
+// const bxMenu = document.querySelector(".burger");
+// const catalogList = document.querySelector(".catalog-list");
+// const categoryBtn = document.querySelector(".categoryBtn");
 const discountCards = document.querySelector(".discount-cards");
 const newCards = document.querySelector(".new-cards");
 const allCards = document.querySelector(".all-cards");
-categoryBtn.addEventListener("click", () => {
-  if (catalogList.style.display == "none") {
-    catalogList.style.display = "grid";
-  } else {
-    catalogList.style.display = "none";
-  }
-});
-bxMenu.addEventListener("click", () => {
-  if (catalogList.style.display == "none") {
-    catalogList.style.display = "grid";
-  } else {
-    catalogList.style.display = "none";
-  }
-});
+// categoryBtn.addEventListener("click", () => {
+//   if (catalogList.style.display == "none") {
+//     catalogList.style.display = "grid";
+//   } else {
+//     catalogList.style.display = "none";
+//   }
+// });
+// bxMenu.addEventListener("click", () => {
+//   if (catalogList.style.display == "none") {
+//     catalogList.style.display = "grid";
+//   } else {
+//     catalogList.style.display = "none";
+//   }
+// });
 
-function getCategories(el) {
-  return `<li>${el}</li>`;
-}
+// function getCategories(el) {
+//   return `<li>${el}</li>`;
+// }
 
-categories.map((el) => {
-  catalogList.innerHTML += getCategories(el);
-});
+// categories.map((el) => {
+//   catalogList.innerHTML += getCategories(el);
+// });
 
 // Product mapping
 

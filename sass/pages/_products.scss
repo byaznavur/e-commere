@@ -1,0 +1,9 @@
+.all-products {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .all-products {
+    margin-top: 0;
+  }
+}
