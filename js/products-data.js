@@ -2,6 +2,7 @@ const products = [
   {
     id: 1,
     name: "Apple",
+    isNew: true,
     category: "Fruit",
     description: "A round fruit with a red, green, or yellow ",
     price: 89,
@@ -17,6 +18,7 @@ const products = [
   {
     id: 2,
     name: "Banana",
+    isNew: true,
     category: "Fruit",
     description:
       "A long, curved fruit with a yellow skin and sweet, creamy white flesh.",
@@ -33,6 +35,7 @@ const products = [
   {
     id: 3,
     name: "Bread",
+    isNew: false,
     category: "Bakery",
     description:
       "A staple food made from flour, water, and yeast, baked into a loaf.",
@@ -49,6 +52,7 @@ const products = [
   {
     id: 4,
     name: "Broccoli",
+    isNew: true,
     category: "Vegetable",
     description:
       "A green vegetable with a tree-like appearance, known for its high nutrient content.",
@@ -65,6 +69,7 @@ const products = [
   {
     id: 5,
     name: "Carrot",
+    isNew: false,
     category: "Vegetable",
     description:
       "A root vegetable with a crunchy texture and a sweet, earthy flavor.",
@@ -81,6 +86,7 @@ const products = [
   {
     id: 6,
     name: "Cheese",
+    isNew: true,
     category: "Dairy",
     description:
       "A dairy product made from milk, with a variety of textures and flavors.",
@@ -97,6 +103,7 @@ const products = [
   {
     id: 7,
     name: "Chicken",
+    isNew: true,
     category: "Meat",
     description:
       "A type of poultry, often used as a source of protein in meals.",
@@ -113,6 +120,7 @@ const products = [
   {
     id: 8,
     name: "Chocolate",
+    isNew: false,
     category: "Dessert",
     description:
       "A sweet food made from cacao beans, used in a variety of desserts and confections.",
@@ -129,6 +137,7 @@ const products = [
   {
     id: 9,
     name: "Coffee",
+    isNew: true,
     category: "Dessert",
     description:
       "A dark, bitter beverage made from roasted coffee beans, typically used as a pick-me-up.",
@@ -145,6 +154,7 @@ const products = [
   {
     id: 10,
     name: "Egg",
+    isNew: false,
     category: "Dairy",
     description:
       "A oval-shaped reproductive body produced by birds, often used as a source of protein in meals.",
@@ -161,6 +171,7 @@ const products = [
   {
     id: 11,
     name: "Fish",
+    isNew: true,
     category: "Meat",
     description:
       "A type of seafood, known for its omega-3 fatty acids and high protein content.",
@@ -177,6 +188,7 @@ const products = [
   {
     id: 12,
     name: "Grapes",
+    isNew: true,
     category: "Fruit",
     description:
       "A small, sweet fruit that grows in clusters, often used in wine-making.",
@@ -193,6 +205,7 @@ const products = [
   {
     id: 13,
     name: "Hamburger",
+    isNew: true,
     category: "Fast food",
     description:
       "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
@@ -209,6 +222,7 @@ const products = [
   {
     id: 14,
     name: "Hot dog",
+    isNew: false,
     category: "Fast food",
     description:
       "A type of sausage served in a long roll, often used as a quick and convenient food.",
@@ -225,6 +239,7 @@ const products = [
   {
     id: 15,
     name: "Ice cream",
+    isNew: true,
     category: "Dessert",
     description:
       "A frozen dessert made from cream, sugar, and flavorings, available in a variety of flavors.",
@@ -241,6 +256,7 @@ const products = [
   {
     id: 16,
     name: "Lemon",
+    isNew: false,
     category: "Fruit",
     description:
       "A yellow citrus fruit with a tart, acidic flavor, often used in cooking and baking.",
@@ -257,6 +273,7 @@ const products = [
   {
     id: 17,
     name: "Eggs",
+    isNew: true,
     category: "Dairy",
     description:
       "Eggs are oval-shaped reproductive structures produced by female birds and some reptiles.",
@@ -273,6 +290,7 @@ const products = [
   {
     id: 18,
     name: "Honey",
+    isNew: false,
     category: "Dairy",
     description:
       "Honey is a sweet, sticky liquid made by bees from the nectar of flowers.",
@@ -289,6 +307,7 @@ const products = [
   {
     id: 19,
     name: "Ice Cream",
+    isNew: true,
     category: "Dessert",
     description:
       "Ice cream is a frozen dessert made from cream, sugar, and flavorings.",
@@ -305,6 +324,7 @@ const products = [
   {
     id: 20,
     name: "Jelly",
+    isNew: false,
     category: "Fruit",
     description:
       "Jelly is a sweet spread made from fruit juice and sugar, often used as a topping for toast or pastries.",
@@ -321,6 +341,7 @@ const products = [
   {
     id: 21,
     name: "Ketchup",
+    isNew: true,
     category: "Dairy",
     description:
       "Ketchup is a tangy sauce made from tomatoes, vinegar, sugar, and spices.",
@@ -337,6 +358,7 @@ const products = [
   {
     id: 22,
     name: "Mango",
+    isNew: true,
     category: "Fruit",
     description:
       "Mangoes are juicy, sweet tropical fruits with a fleshy interior and a large, oblong seed in the center.",
@@ -353,6 +375,7 @@ const products = [
   {
     id: 23,
     name: "Noodles",
+    isNew: false,
     category: "Meat",
     description:
       "Noodles are a type of pasta made from wheat flour and water, often used in Asian cuisine.",
@@ -369,6 +392,7 @@ const products = [
   {
     id: 24,
     name: "Oatmeal",
+    isNew: false,
     category: "Breakfast",
     description:
       "Oatmeal is a type of porridge made from oats that is often served for breakfast.",
@@ -385,6 +409,7 @@ const products = [
   {
     id: 25,
     name: "Bacon",
+    isNew: true,
     category: "Breakfast",
     description:
       "Bacon is a popular breakfast food made from cured pork belly, it is newly delivered.",
@@ -401,6 +426,7 @@ const products = [
   {
     id: 26,
     name: "Pancakes",
+    isNew: false,
     category: "Breakfast",
     description:
       "Pancakes are a popular breakfast food made from flour, eggs, and milk.",
@@ -417,6 +443,7 @@ const products = [
   {
     id: 27,
     name: "Waffles",
+    isNew: true,
     category: "Breakfast",
     description:
       "Waffles are a type of breakfast food made from batter cooked in a waffle iron.",
@@ -433,6 +460,7 @@ const products = [
   {
     id: 28,
     name: "Fried Rice",
+    isNew: true,
     category: "Lunch",
     description:
       "Fried Rice is a type of rice dish that is stir-fried in a pan with oil and other ingredients.",
@@ -449,6 +477,7 @@ const products = [
   {
     id: 29,
     name: "Spaghetti",
+    isNew: true,
     category: "Lunch",
     description:
       "Spaghetti is a type of pasta made from wheat flour and water, usually served with sauce.",
@@ -465,6 +494,7 @@ const products = [
   {
     id: 30,
     name: "Pizza",
+    isNew: true,
     category: "Lunch",
     description:
       "Pizza is a popular dish made from dough, sauce, cheese, and toppings.",
@@ -481,6 +511,7 @@ const products = [
   {
     id: 31,
     name: "Grilled Cheese",
+    isNew: false,
     category: "Lunch",
     description:
       "A grilled cheese sandwich is a hot sandwich made from cheese and bread.",
@@ -497,6 +528,7 @@ const products = [
   {
     id: 32,
     name: "Steak",
+    isNew: true,
     category: "Dinner",
     description:
       "Steak is a popular dinner dish made from a cut of beef that is usually grilled or pan-fried.",
@@ -513,6 +545,7 @@ const products = [
   {
     id: 33,
     name: "Salmon",
+    isNew: true,
     category: "Dinner",
     description:
       "Salmon is a type of fish that is often grilled or baked and served as a main course.",
@@ -529,6 +562,7 @@ const products = [
   {
     id: 34,
     name: "Chicken Alfredo",
+    isNew: false,
     category: "Dinner",
     description:
       "Chicken Alfredo is a pasta dish made with chicken, alsjfkdlkasdfhlkjh.",
@@ -545,6 +579,7 @@ const products = [
   {
     id: 35,
     name: "Lasagna",
+    isNew: true,
     category: "Dinner",
     description:
       "Lasagna is a type of pasta dish made with layers of pasta, sauce, cheese, and meat or vegetables.",
@@ -561,6 +596,7 @@ const products = [
   {
     id: 36,
     name: "Chocolate Chip Cookies",
+    isNew: false,
     category: "Dessert",
     description:
       "Chocolate Chip Cookies are a type of cookie made from flour, sugar, butter, and chocolate chips.",

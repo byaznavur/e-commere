@@ -5,7 +5,9 @@
   position: fixed;
   width: 100%;
   right: 0;
+  top: 0;
   left: 0;
+  background-color: #c7e2d9;
 
   .logo {
     display: flex;
@@ -91,6 +93,105 @@
     border-radius: 10px;
   }
 }
+
+@media screen and ((min-width: 768px) and (max-width:1200px)) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: #c7e2d9;
+
+    .logo {
+      display: flex;
+      gap: 10px;
+
+      h1 {
+        color: #000;
+        display: none;
+      }
+    }
+    .catalog-list {
+      display: none;
+      position: absolute;
+      top: 100px;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: #fff;
+      right: 0;
+      left: 0;
+      gap: 20px;
+      margin: 0 auto;
+      padding: 20px 100px;
+      background-color: #fff;
+
+      li {
+        /* Desc/Text-Bold/S */
+        color: rgb(65, 65, 65);
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+        transition: all 0.5s ease;
+
+        &:hover {
+          color: rgb(255, 102, 51);
+        }
+      }
+    }
+    .nav-list {
+      display: flex;
+      gap: 20px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #000;
+      }
+    }
+
+    .sidebar {
+      display: none;
+    }
+
+    .nav-catalog {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #70c05b;
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+
+    .nav-search {
+      i {
+        margin-left: -24px;
+      }
+    }
+
+    .nav-select {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -158,6 +259,7 @@
       display: flex;
       position: fixed;
       width: 100%;
+      background-color: #fff;
 
       ul {
         padding: 20px 16px;
@@ -169,6 +271,7 @@
         width: 100%;
         bottom: 0;
         right: 0;
+        background-color: #fff;
         left: 0;
 
         li {
