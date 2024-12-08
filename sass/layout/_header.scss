@@ -8,6 +8,8 @@
   top: 0;
   left: 0;
   background-color: #c7e2d9;
+  transition: 0.7s;
+  z-index: 1000;
 
   .logo {
     display: flex;
@@ -20,7 +22,7 @@
   .catalog-list {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 85px;
     grid-template-columns: repeat(4, 1fr);
     background-color: #fff;
     right: 0;
@@ -273,6 +275,7 @@
         right: 0;
         background-color: #fff;
         left: 0;
+        z-index: 1000;
 
         li {
           display: flex;

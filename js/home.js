@@ -4,6 +4,9 @@
 const discountCards = document.querySelector(".discount-cards");
 const newCards = document.querySelector(".new-cards");
 const allCards = document.querySelector(".all-cards");
+const advertCard = document.querySelector(".advert-cards");
+
+const articlesCards = document.querySelector(".articles-cards");
 // categoryBtn.addEventListener("click", () => {
 //   if (catalogList.style.display == "none") {
 //     catalogList.style.display = "grid";
@@ -132,4 +135,36 @@ function getAllProduct(el) {
 
 products.slice(0, 4).map((el) => {
   allCards.innerHTML += getAllProduct(el);
+});
+
+function getAdvert(el) {
+  return `<div class= "advert-card">
+  <div>
+  <h3>${el.title}</h3>
+  <p>${el.desc}</p>
+  </div>
+
+  <img src = ${el.img} alt= ${el.title}/>
+  </div>`;
+}
+
+advert.map((el) => {
+  advertCard.innerHTML += getAdvert(el);
+});
+
+function getArticles(el) {
+  return `
+  <div class = "article-card">
+    <img src=${el.image} alt = ${el.title}/>
+    <span>${el.date}</span>
+    <h3>${el.title}</h3>
+    <p>${el.description.slice(0, 120)}</p>
+
+    <a href = "#">Подробнее</a>
+  </div>
+  `;
+}
+
+articles.map((el) => {
+  articlesCards.innerHTML += getArticles(el);
 });
